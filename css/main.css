@@ -1,0 +1,81 @@
+:root {
+    --dark-gray : #1f1f1f;
+    --gray: #3d3d3d;
+    --light-gray: #868686;
+    --yellow : #F6B17A;
+}
+
+body {
+    background-color: var(--dark-gray);
+    color: white ;
+}
+
+nav {
+    display: flex;
+    flex : 1 ;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center ;
+    text-align: center ;
+    height: 10vh ;
+    width: 100vw ;
+}
+
+nav a {
+    text-decoration: none;
+    transition: 0.2s;
+    width: 20vw ;
+    color: white ;
+}
+
+nav a:hover {
+    color: var(--yellow);
+    transition: 0.2s;
+    font-weight: 400;
+}
+
+#main {
+    min-height: 90vh ;
+    display: flex ;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+footer {
+    height: 10vh ;
+    background-color: blue;
+}
+
+
+#file {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 16px;
+}
+
+#file button {
+    margin-left: 16px ;
+    border: None;
+    border-radius: 4px;
+    background-color: var(--light-gray);
+    height: 6vh ;
+}
+
+#file button:hover {
+    background-color: var(--yellow);
+    color: var(--dark-gray);
+    transition: 0.2s;
+    font-weight: 400;
+}
+
+#file input {
+    border-radius: 4px;
+}
+
+#loadingSpinner {
+    margin-top: 16px;
+}
